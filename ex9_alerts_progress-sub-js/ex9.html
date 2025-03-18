@@ -7,9 +7,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container mt-3">
+        <!-- botoes para os alerts -->
+         <div class="mb-3">
+            <button class="btn btn-success me-3"id="showSuccessBtn">
+                successo
+            </button>
+            <button class="btn btn-danger me-3"id="showErrorBtn">
+                alerta
+            </button>
+            <button class="btn btn-warning me-3" id="showToastBtn">
+                erro
+            </button>
+         </div>
+         <!-- Alerta de sucesso -->
+          <div class="alert alert-success alert-dismissible fade" id="successAlert">
+            <p><strong>parabéns!</strong>alerta realizado com sucesso!</p>
+            <button type=" button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
 
 
-    <!-- 1ª Digitação (Aqui) -->
+          <div class="alert alert-danger alert-dismissible fade" id="errorAlert">
+            <p><strong>erro!</strong>erro!</p>
+            <button type=" button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
